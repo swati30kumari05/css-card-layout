@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #dcdcdc;
+    padding: 20px;
+}
+
+/* Heading bar */
+.heading-bar {
+    background: #1e6ecf;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+/* Cards row */
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: nowrap;
+}
+
+/* Big, visually pleasing cards */
+.card {
+    width: 360px;
+    min-height: 360px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    padding: 20px 22px;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 26px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* Top colored area (fake image + icon) */
+.card-top {
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.25);
+}
+
+/* Different themes per card */
+.html-top {
+    background: linear-gradient(180deg, #48c6ff, #0092f4);
+}
+.css-top {
+    background: linear-gradient(180deg, #0f9cff, #0064c8);
+}
+.js-top {
+    background: linear-gradient(180deg, #36c1ff, #0074cc);
+}
+.bs-top {
+    background: linear-gradient(180deg, #8a3dff, #5a1fb4);
+}
+
+/* Icon inside top area */
+.icon {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Text inside top area */
+.card-top-main {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Title and body text */
+.card h3 {
+    font-size: 18px;
+    margin: 8px 0 14px;
+    color: #222222;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Button */
+.btn {
+    background: linear-gradient(135deg, #ff3b3b, #ff0000);
+    color: #ffffff;
+    border: none;
+    padding: 10px 26px;
+    border-radius: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(255, 0, 0, 0.4);
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #ff2222, #e60000);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(255, 0, 0, 0.55);
+}
+
+/* Wrap on smaller screens */
+@media (max-width: 1300px) {
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
